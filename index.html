@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="./pink-trombone.min.js" type="module"></script>
+        
+        
+    </head>
+    
+    <body>
+        <input type="text" id="inputTextBox" size="50">
+        <button id="speakBtn" >Speak</button>
+        <h1 id="header"></h1>
+        <p id="coordinates"></p>
+
+        <pink-trombone>
+        </pink-trombone>
+        
+        
+        <script>
+            const pinkTromboneElement = document.querySelector("pink-trombone");
+            
+            pinkTromboneElement.addEventListener("load", event => {
+                pinkTromboneElement.setAudioContext()
+                    .then(pinkTrombone => {
+                        pinkTromboneElement.enableUI();
+                        pinkTromboneElement.startUI();
+                        pinkTromboneElement.connect(pinkTromboneElement.audioContext.destination);
+                    })})
+        </script>
+        <script src="./script/graphics/MyFunctions.js" type="module"></script>
+
+    </body>
+</html>
