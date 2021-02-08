@@ -1,6 +1,11 @@
 <a href="https://twitter.com/ConcreteSciFi/status/1138555909133594624" target="_blank">![Fabien](images/pinkTrombone.gif)</a><br>
 _Sound is generated in the glottis (at the bottom left), then filtered by the shape of the vocal tract. The voicebox controls the pitch and intensity of the initial sound_ - [Neil Thapen](http://venuspatrol.nfshost.com/)
 
+# Instructions of usage:
+1. Clone/unzip into a folder.
+1. Run a web server using python3 -m http.server in the folder
+1. Check localhost:8000 or 0.0.0.0:8000 on your browser
+
 # 🗣️ Pink Trombone - Bare-handed Speech Synthesis
 _A programmable version of [Neil Thapen's](http://venuspatrol.nfshost.com/) famous and wonderful [Pink Trombone](https://dood.al/pinktrombone/)_
 
